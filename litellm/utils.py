@@ -7873,7 +7873,7 @@ def check_valid_key(model: str, api_key: str):
     Returns:
         bool: True if the API key is valid for the model, False otherwise.
     """
-    messages = [{"role": "user", "content": "Hey, how's it going?"}]
+    messages = [{"role": "user", "content": "Say Yes"}]
     try:
         litellm.completion(
             model=model, messages=messages, api_key=api_key, max_tokens=10
